@@ -1,0 +1,151 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+header {
+    background-color: #172228; 
+    padding: 9px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Efecto Parallax */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#inicio {
+    position: relative;
+    background-image: url('images/set-fast-food.avif'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 19, 38);
+    text-align: center;
+    font-size: 34px;
+    font-style: italic;
+}
+#inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+#parallax-nosotros {
+    background-image: url('images/1000_F_732943041_UTiWSpMxphXvbUeGJJEGA7SXHbYOMHy7.jpg'); /* Imagen de fondo */
+    font-size: 24px;
+}
+
+/* Sección de Menú */
+#menu {
+   
+    padding: 400px 50px;
+    text-align:center;
+    background-image: url('images/1000_F_787271828_qmi0mzkDfAQqtxF5CNQGocSgqDbpzg2K.jpg'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    
+}
+
+    text-align: center;
+
+
+.menu-item {
+    margin: 20px 0;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    color: #172228;
+}
+
+/* Sección de Contacto */
+#contacto {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #172228;
+    color: white;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #59bde1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+    background-color: #172228;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
